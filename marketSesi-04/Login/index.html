@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="round">
+            <i class="fa-solid fa-carrot logo"></i>
+        </div>
+
+        <div class="wrap-input-label">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Insira seu nome">
+        </div>
+
+        <div class="wrap-input-label">
+            <label for="senha">Senha</label>
+            <input type="text" id="senha" placeholder="Insira sua senha">
+            <div onclick="showPassword()">
+                <img class="eye" src="./Images/eye.png" alt="Olhos" id="eye">
+            </div>
+        </div>
+
+        <p>esqueci minha senha</p>
+        <button class="btn-login" onclick="login()">LOGIN</button>
+    </div>
+
+    <div class="error-div" id="error-modal">
+        <h3>Credenciais incorretas</h3>
+        <button onclick="fecharError()">❌</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
